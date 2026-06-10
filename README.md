@@ -1,1 +1,1 @@
-# Economic-Trap
+# Regional-Economic-Trap
