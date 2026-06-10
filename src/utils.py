@@ -1,14 +1,17 @@
 import os
 from pathlib import Path
 
-BASE_DIR = Path("D:/ANO/ai-agent-belanja-negara")
+# Dynamically resolve base dir — works locally AND on Streamlit Cloud
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 DATA_RAW = BASE_DIR / "data" / "raw"
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
 DATA_EXTERNAL = BASE_DIR / "data" / "external"
 MODELS_DIR = BASE_DIR / "models"
 DATA_PENDUKUNG = BASE_DIR / "pendukung"
 
-SOURCE_FILE = Path("D:/ANO/ddac.xlsx")
+# Source file juga jangan hardcoded
+SOURCE_FILE = DATA_RAW / "ddac.xlsx"
 
 PROVINSI_MAPPING = {}
 
