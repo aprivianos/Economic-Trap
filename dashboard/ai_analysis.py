@@ -7,9 +7,9 @@ env_path = Path(__file__).parent.parent / ".env"
 if env_path.exists():
     load_dotenv(env_path)
 
-API_KEY = os.getenv("OPENAI_API_KEY") or None
-BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+API_KEY = os.getenv("DEEPSEEK_API_KEY") or None
+BASE_URL = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
 
 
 def get_api_key() -> str | None:
