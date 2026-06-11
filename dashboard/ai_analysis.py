@@ -7,7 +7,7 @@ env_path = Path(__file__).parent.parent / ".env"
 if env_path.exists():
     load_dotenv(env_path)
 
-API_KEY = os.getenv("OPENAI_API_KEY") or None
+API_KEY = os.getenv("sk-224b40d1471a440e9c84c057d97c5cd8") or None
 BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
